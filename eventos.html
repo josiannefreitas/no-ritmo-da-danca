@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="eventos.css" />
+
+    <title>Nossos eventos</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <nav>
+          <a id="logo" href="./index.html">
+            <img src="./assets/header.svg" alt="Logotipo" />
+          </a>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./eventos.html">Nossos eventos</a></li>
+            <li><a href="">Nossa missão</a></li>
+            <li><a href="">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="page">
+        <header>
+          <h1>Concurso Cover K-pop</h1>
+        
+          <h2>Regras de Inscrição e Participação</h2>
+
+          <p>Os concursos de dança da <span>No Ritmo da Dança</span> são uma oportunidade emocionante para dançarinos de todas as idades e estilos mostrarem seus talentos e se destacarem na comunidade de dança. Para garantir uma competição justa e segura, pedimos a todos os participantes que sigam atentamente as seguintes regras de inscrição e participação:</p>
+  
+          <p><strong>Elegibilidade:</strong> O concurso está aberto a dançarinos de todas as idades e níveis de habilidade. Menores de idade devem ter permissão dos pais ou responsáveis para participar.</p>           
+
+          <p><strong>Inscrição:</strong> As inscrições devem ser feitas através do preenchimento do formulário de inscrição abaixo e envio dos vídeos de desempenho conforme as instruções fornecidas.</p>
+
+          <p><strong>Prazo de Inscrição:</strong> O prazo final para inscrições será no dia ** de *** de ****, às ** horas, conforme comunicado em nosso website e em nossas redes sociais. Inscrições recebidas após a data limite não serão consideradas.</p>
+
+          <p><strong>Taxa de Inscrição:</strong> É cobrada taxa de inscrição no valor de R$**, por pessoa, para cobrir os custos administrativos do concurso. O comprovante do pagamento da inscrição deve ser enviado no momento de preenchimento do formulário abaixo. Os formulários submetidos sem o comprovante de pagamento serão desconsiderados.</p>
+
+          <p><strong>Vídeos de Desempenho:</strong> Os participantes devem enviar vídeos de suas performances conforme as especificações fornecidas. Os vídeos devem ser gravados em um ambiente adequado, com boa iluminação e qualidade de áudio. Os vídeos que não atenderem aos requisitos básicos de qualidade especificados serão desclassificados automaticamente.</p>
+
+          <p><strong>Conteúdo das Performances:</strong> As performances devem ser apropriadas para todas as idades e não devem conter linguagem ou imagens ofensivas, violentas ou discriminatórias.</p>
+          
+          <p><strong>Decisões dos Juízes:</strong> Todas as decisões dos juízes são finais e vinculativas. Os critérios de julgamento serão divulgados antes do início do concurso.</p>
+
+          <p><strong>Premiações:</strong> Os vencedores serão anunciados após o término do concurso e receberão prêmios de acordo com sua classificação. Os detalhes sobre premiações serão divulgados no momento da inscrição.</p>
+
+          <p>Ao se inscrever e participar do concurso de dança "No Ritmo da Dança", os participantes concordam em cumprir todas as regras e regulamentos estabelecidos. A violação de qualquer uma das regras resultará na desqualificação imediata.</p>
+        </header>
+  
+        <form>
+          <fieldset>
+            <legend>Informações Pessoais</legend>
+  
+            <div class="fieldset-wrapper">
+              <div class="col-2">
+                <div class="input-wrapper">
+                  <label for="first-name">Nome</label>
+                  <input type="text" name="first-name" id="first-name" required />
+                </div>
+  
+                <div class="input-wrapper">
+                  <label for="last-name">Sobrenome</label>
+                  <input type="text" name="last-name" id="last-name" required />
+                </div>
+              </div>
+  
+              <div class="input-wrapper">
+                <label for="email"
+                  >E-mail<span>(digite um email válido)</span></label
+                >
+                <input type="email" name="email" id="email" required />
+              </div>
+  
+              <div class="input-wrapper">
+                <label for="password"
+                  >Senha<span>(mínimo de 6 caracteres)</span></label
+                >
+                <input type="password" name="password" id="password" required minlength="8" />
+              </div>
+            </div>
+          </fieldset>
+  
+          <fieldset>
+            <legend>Informações da inscrição</legend>
+  
+            <div class="input-wrapper">
+              <label for="music-name"
+                >Nome da música e do cantor<span>(música - cantor)</span></label
+              >
+              <input type="text" name="music-name" id="music-name" />
+            </div>
+          </fieldset>
+  
+          <fieldset>
+            <legend>Envio do vídeo</legend>
+  
+            <div class="mentorship-wrapper">
+              <h2>Vídeo cover</h2>
+  
+                <div class="date">
+                  <div class="input-wrapper">
+                    <label for="video-cover-place"
+                      >Vídeo cover</label
+                    >
+                    <input type="file" id="video-cover" name="video-cover" required>
+                  </div>
+                </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Pagamento</legend>
+  
+            <div class="mentorship-wrapper">
+              <h2>Comprovante de pagamento</h2>
+                  <div class="input-wrapper">
+                    <label for="payment-place"
+                      >Comprovante de pagamento</label
+                    >
+                    <input type="file" id="payment" name="payment" required>
+                  </div>                   
+              </div>
+            </div>
+          </fieldset>
+        </form>
+  
+        <footer>
+          <input class="button" type="button" value="Salvar" />
+        </footer>
+      </div>   
+    </div>
+
+  </body>
+</html>
